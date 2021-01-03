@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkPrirode2", "ParkPrirode2\ParkPrirode2.csproj", "{9F94C2CB-1761-42F7-B56B-5B44947F884C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{F27CC7A8-3E22-40F5-845E-24312EFC51E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F94C2CB-1761-42F7-B56B-5B44947F884C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F94C2CB-1761-42F7-B56B-5B44947F884C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F94C2CB-1761-42F7-B56B-5B44947F884C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F94C2CB-1761-42F7-B56B-5B44947F884C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F27CC7A8-3E22-40F5-845E-24312EFC51E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27CC7A8-3E22-40F5-845E-24312EFC51E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27CC7A8-3E22-40F5-845E-24312EFC51E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27CC7A8-3E22-40F5-845E-24312EFC51E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {314DA596-5BE4-49EA-AB55-06C0B8E96825}
+	EndGlobalSection
+EndGlobal

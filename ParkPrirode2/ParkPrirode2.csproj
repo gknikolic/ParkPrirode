@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F94C2CB-1761-42F7-B56B-5B44947F884C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ParkPrirode2</RootNamespace>
+    <AssemblyName>ParkPrirode2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.1.2\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.2.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.2.5\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.3.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOblast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOblast.Designer.cs">
+      <DependentUpon>AddOblast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="DodajBiljku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajBiljku.Designer.cs">
+      <DependentUpon>DodajBiljku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajHraniliste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajHraniliste.Designer.cs">
+      <DependentUpon>DodajHraniliste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajOpstineUOblasti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajOpstineUOblasti.Designer.cs">
+      <DependentUpon>DodajOpstineUOblasti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajRadnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajRadnika.Designer.cs">
+      <DependentUpon>DodajRadnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajZivotinju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajZivotinju.Designer.cs">
+      <DependentUpon>DodajZivotinju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTOManangers\DTOManangerBiljka.cs" />
+    <Compile Include="DTOManangers\DTOmanangerHraniliste.cs" />
+    <Compile Include="DTOManangers\DTOManangerOblast.cs" />
+    <Compile Include="DTOManangers\DTOManangerOpstineUOblasti.cs" />
+    <Compile Include="DTOManangers\DTOManangerRadnik.cs" />
+    <Compile Include="DTOManangers\DTOManangerZivotinja.cs" />
+    <Compile Include="DTO\DTOBiljka.cs" />
+    <Compile Include="DTO\DTOHraniliste.cs" />
+    <Compile Include="DTO\DTOOblast.cs" />
+    <Compile Include="DTO\DTOOpstineUOblasti.cs" />
+    <Compile Include="DTO\DTORadnik.cs" />
+    <Compile Include="DTO\DTOZivotinja.cs" />
+    <Compile Include="Entiteti\Biljka.cs" />
+    <Compile Include="Entiteti\Hraniliste.cs" />
+    <Compile Include="Entiteti\Oblast.cs" />
+    <Compile Include="Entiteti\OpstineUOblasti.cs" />
+    <Compile Include="Entiteti\PrimeceneNaHranilistima.cs" />
+    <Compile Include="Entiteti\PrimeceneNaHranilistimaId.cs" />
+    <Compile Include="Entiteti\PrimeceneUZemljama.cs" />
+    <Compile Include="Entiteti\Radnik.cs" />
+    <Compile Include="Entiteti\Zivotinja.cs" />
+    <Compile Include="GlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavnaForma.Designer.cs">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapiranja\BiljkaMapiranja.cs" />
+    <Compile Include="Mapiranja\HranilisteMapiranja.cs" />
+    <Compile Include="Mapiranja\OblastMapiranja.cs" />
+    <Compile Include="Mapiranja\OpstineUOblastiMapiranja.cs" />
+    <Compile Include="Mapiranja\PrimeceneNaHranilistimaMapiranja.cs" />
+    <Compile Include="Mapiranja\PrimeceneUZemljamaMapiranja.cs" />
+    <Compile Include="Mapiranja\RadnikMapiranja.cs" />
+    <Compile Include="Mapiranja\ZivotinjaMapiranja.cs" />
+    <Compile Include="OstaleInformacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OstaleInformacije.Designer.cs">
+      <DependentUpon>OstaleInformacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prikaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prikaz.Designer.cs">
+      <DependentUpon>Prikaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <EmbeddedResource Include="AddOblast.resx">
+      <DependentUpon>AddOblast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajBiljku.resx">
+      <DependentUpon>DodajBiljku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajHraniliste.resx">
+      <DependentUpon>DodajHraniliste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajOpstineUOblasti.resx">
+      <DependentUpon>DodajOpstineUOblasti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajRadnika.resx">
+      <DependentUpon>DodajRadnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajZivotinju.resx">
+      <DependentUpon>DodajZivotinju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavnaForma.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OstaleInformacije.resx">
+      <DependentUpon>OstaleInformacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prikaz.resx">
+      <DependentUpon>Prikaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volonter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biljka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biljkazastita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biljkaslika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zivotinjaenv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hranilisteslika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opstineslika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hranilistaslika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radnikslika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavnaslika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavnaslika3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
