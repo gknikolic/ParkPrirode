@@ -19,6 +19,14 @@ namespace ParkPrirode2.DTO
 
         }
 
+        public BiljkaView(Biljka b)
+        {
+            this.Id = b.Id;
+            this.LatinskiNaziv = b.LatinskiNaziv;
+            this.LokalniNaziv = b.LokalniNaziv;
+            this.PosebnaZastita = b.PosebnaZastita.ToString();
+        }
+
         public BiljkaView(int Id, string LatinskiNaziv, string LokalniNaziv, string PosebnaZastita)
         {
             this.Id = Id;
